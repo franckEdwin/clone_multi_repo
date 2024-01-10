@@ -12,8 +12,9 @@ fi
 # Read the file line by line and clone the repos
 while IFS= read -r repo_name; do
    
-    # For this part, you can use the ssh link
-    repo_url="git@github.com:"username_github"/$repo_name.git"
+    # For this part, you can use the ssh link for the example we use user johndoe
+    # But change this part to add your username
+    repo_url="git@github.com:johndoe/$repo_name.git"
 
     echo "Cloning repo for $repo_name..."
     
